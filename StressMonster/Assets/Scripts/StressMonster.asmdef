@@ -1,0 +1,25 @@
+{
+  "name": "StressMonster",
+  "rootNamespace": "StressMonster",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [
+    "UnityEngine.dll",
+    "UnityEngine.CoreModule.dll",
+    "UnityEngine.InputLegacyModule.dll",
+    "UnityEngine.Physics2DModule.dll",
+    "UnityEngine.ParticleSystemModule.dll",
+    "UnityEngine.AudioModule.dll",
+    "UnityEngine.UI.dll",
+    "UnityEngine.IMGUIModule.dll",
+    "UnityEngine.TextRenderingModule.dll",
+    "UnityEditor.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

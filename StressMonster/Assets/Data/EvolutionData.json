@@ -1,0 +1,134 @@
+{
+  "evolutionStages": [
+    {
+      "stage": 0,
+      "stageName": "幼年期",
+      "minFeeds": 0,
+      "maxFeeds": 49,
+      "baseScale": 0.6,
+      "description": "圆滚滚小球，大眼睛，小嘴"
+    },
+    {
+      "stage": 1,
+      "stageName": "成长期",
+      "minFeeds": 50,
+      "maxFeeds": 199,
+      "baseScale": 0.8,
+      "description": "开始长出特征，体型增大"
+    },
+    {
+      "stage": 2,
+      "stageName": "成熟期",
+      "minFeeds": 200,
+      "maxFeeds": 499,
+      "baseScale": 1.0,
+      "description": "特征明显，解锁特殊技能"
+    },
+    {
+      "stage": 3,
+      "stageName": "完全体",
+      "minFeeds": 500,
+      "maxFeeds": 99999,
+      "baseScale": 1.2,
+      "description": "独特形态，终极技能解锁"
+    }
+  ],
+  "evolutionFeatures": [
+    {
+      "slot": 0,
+      "emotionType": 0,
+      "featureName": "火焰角",
+      "description": "头顶燃烧的火焰之角"
+    },
+    {
+      "slot": 0,
+      "emotionType": 1,
+      "featureName": "雷电耳",
+      "description": "闪烁电光的尖耳朵"
+    },
+    {
+      "slot": 0,
+      "emotionType": 2,
+      "featureName": "雨云帽",
+      "description": "头顶飘着的小雨云"
+    },
+    {
+      "slot": 0,
+      "emotionType": 3,
+      "featureName": "爆炸头",
+      "description": "蓬松爆炸的发型"
+    },
+    {
+      "slot": 1,
+      "emotionType": 0,
+      "featureName": "熔岩纹路",
+      "description": "身体流淌着熔岩纹路"
+    },
+    {
+      "slot": 1,
+      "emotionType": 1,
+      "featureName": "电流皮肤",
+      "description": "皮肤表面闪烁电流"
+    },
+    {
+      "slot": 1,
+      "emotionType": 2,
+      "featureName": "水晶身体",
+      "description": "晶莹剔透的水晶身躯"
+    },
+    {
+      "slot": 1,
+      "emotionType": 3,
+      "featureName": "铠甲外壳",
+      "description": "坚固的铠甲外壳"
+    },
+    {
+      "slot": 2,
+      "emotionType": 0,
+      "featureName": "火拳",
+      "description": "燃烧着火焰的拳头"
+    },
+    {
+      "slot": 2,
+      "emotionType": 1,
+      "featureName": "电爪",
+      "description": "带电的利爪"
+    },
+    {
+      "slot": 2,
+      "emotionType": 2,
+      "featureName": "治愈之手",
+      "description": "散发治愈光芒的双手"
+    },
+    {
+      "slot": 2,
+      "emotionType": 3,
+      "featureName": "爆破臂",
+      "description": "能产生爆炸的手臂"
+    },
+    {
+      "slot": 3,
+      "emotionType": 0,
+      "featureName": "火焰尾",
+      "description": "燃烧的尾巴"
+    },
+    {
+      "slot": 3,
+      "emotionType": 1,
+      "featureName": "闪电尾",
+      "description": "带电的尾巴"
+    },
+    {
+      "slot": 3,
+      "emotionType": 2,
+      "featureName": "彩虹尾",
+      "description": "散发彩虹光芒的尾巴"
+    },
+    {
+      "slot": 3,
+      "emotionType": 3,
+      "featureName": "导弹尾",
+      "description": "可发射导弹的尾巴"
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 24
+  productGUID: b1a2c3d4e5f6a7b8c9d0e1f2a3b4c5d7
+  AndroidProfiler: 0
+  AndroidFilterTouchesWhenObscured: 0
+  AndroidEnableSustainedPerformanceMode: 0
+  defaultScreenOrientation: 1
+  targetDevice: 2
+  useOnDemandResources: 0
+  accelerometerFrequency: 60
+  companyName: StressMonsterStudio
+  productName: "\u538B\u529B\u602A\u517D"
+  defaultCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
+  m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
+  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashLogo: 1
+  m_SplashScreenOverlayOpacity: 1
+  m_SplashScreenAnimation: 1
+  m_SplashScreenLogoStyle: 1
+  m_SplashScreenDrawMode: 0
+  m_SplashScreenBackgroundAnimationZoom: 1
+  m_SplashScreenBackgroundAnimationZoomType: 0
+  m_SplashScreenBackgroundBlur: 0
+  m_SplashScreenBackgroundBlurSize: 0.5
+  scriptingBackend: 0
+  il2cppCompilerConfiguration: 0
+  managedStrippingLevel: 1
+  incrementalIl2cppBuild: 0
+  suppressCommonWarnings: 1
+  allowUnsafeCode: 0
+  useDeterministicCompilation: 1
+  enableRoslynAnalyzers: 1
+  additionalIl2CppArgs: 
+  scriptingRuntimeVersion: 1
+  gcIncremental: 1
+  gcWBarrierValidation: 0
+  apiCompatibilityLevel: 6
+  activeInputHandler: 0
+  windowsGamepadBackendHint: 0
+  cloudProjectId: 
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsName: 
+  projectName: 
+  organizationId: 
+  cloudEnabled: 0
+  legacyClampBlendShapeWeights: 0
+  playerDataPath: 
+  forceSingleInstance: 0
+  useMonolithicPipelines: 1
+  virtualTexturingSupportEnabled: 0
+  m_SplashScreenLogos: []
+  AndroidTargetArchitectures: 1
+  AndroidTargetDevices: 0
+  AndroidSplashScreenScale: 0
+  androidSplashScreen: {fileID: 0}
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
+  AndroidEnableArmv9SecurityFeatures: 0
+  AndroidBuildApkPerCpuArchitecture: 0
+  AndroidTVCompatibility: 0
+  AndroidIsGame: 1
+  AndroidEnableTango: 0
+  androidEnableBanner: 1
+  androidUseLowAccuracyLocation: 0
+  androidUseCustomKeystore: 0
+  m_AndroidBanners:
+  - width: 320
+    height: 180
+    banner: {fileID: 0}
+  androidGamepadSupportLevel: 0
+  AndroidValidateAppBundleSize: 1
+  AndroidAppBundleSizeToValidate: 150
+  m_BuildTargetIcons: []
+  m_BuildTargetPlatformIcons:
+  - m_BuildTarget: Android
+    m_Icons:
+    - m_Textures: []
+      m_Width: 432
+      m_Height: 432
+      m_Kind: 2
+      m_SubKind: 
+  m_PresetIcons: []
+  m_Platforms:
+  - Android
+  - StandaloneWindows
+  m_CustomTargetPlatformIcons: []
+  m_AllowedIdentifiers: []
+  m_BuildTargetBatching: []
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 0b00000008000000
+    m_Automatic: 1
+  - m_BuildTarget: StandaloneWindowsPlayer
+    m_APIs: 02000000
+    m_Automatic: 1
+  m_BuildTargetVRSettings: []
+  m_BuildTargetEnableVuforiaSettings: []
+  openGLRequireES31: 0
+  openGLRequireES31AEP: 0
+  openGLRequireES32: 0
+  m_TemplateCustomTags: {}
+  mobileMTRendering:
+    Android: 1
+    iPhone: 1
+    tvOS: 1
+  m_BuildTargetGroupLightmapEncodingQuality: []
+  m_BuildTargetGroupHDRCubemapEncodingQuality: []
+  m_BuildTargetGroupLightmapSettings: []
+  m_BuildTargetNormalMapEncoding: []
+  m_BuildTargetDefaultTextureCompressionFormat: []
+  playModeTestRunnerEnabled: 0
+  runPlayModeTestAsEditModeTest: 0
+  actionOnDotNetUnhandledException: 1
+  enableInternalProfiler: 0
+  logObjCUncaughtExceptions: 1
+  enableCrashReportAPI: 0
+  cameraUsageDescription: 
+  locationUsageDescription: 
+  microphoneUsageDescription: 
+  bluetoothUsageDescription: 
+  switchNMETAOverride: 
+  switchNetLibKey: 
+  switchSocketMemoryPoolSize: 6144
+  switchSocketAllocatorPoolSize: 128
+  switchSocketConcurrencyLimit: 14
+  switchScreenResolutionBehavior: 2
+  switchUseCPUProfiler: 0
+  switchUseGOLDLinker: 0
+  switchLTOSetting: 0
+  switchApplicationID: 0x01004b9000490000
+  switchNSODependencies: 
+  switchTitleNames_0: 
+  switchTitleNames_1: 
+  switchTitleNames_2: 
+  switchTitleNames_3: 
+  switchTitleNames_4: 
+  switchTitleNames_5: 
+  switchTitleNames_6: 
+  switchTitleNames_7: 
+  switchTitleNames_8: 
+  switchTitleNames_9: 
+  switchTitleNames_10: 
+  switchTitleNames_11: 
+  switchTitleNames_12: 
+  switchTitleNames_13: 
+  switchTitleNames_14: 
+  switchTitleNames_15: 
+  switchPublisherNames_0: 
+  switchPublisherNames_1: 
+  switchPublisherNames_2: 
+  switchPublisherNames_3: 
+  switchPublisherNames_4: 
+  switchPublisherNames_5: 
+  switchPublisherNames_6: 
+  switchPublisherNames_7: 
+  switchPublisherNames_8: 
+  switchPublisherNames_9: 
+  switchPublisherNames_10: 
+  switchPublisherNames_11: 
+  switchPublisherNames_12: 
+  switchPublisherNames_13: 
+  switchPublisherNames_14: 
+  switchPublisherNames_15: 
+  switchIcons_0: {fileID: 0}
+  switchIcons_1: {fileID: 0}
+  switchIcons_2: {fileID: 0}
+  switchIcons_3: {fileID: 0}
+  switchIcons_4: {fileID: 0}
+  switchIcons_5: {fileID: 0}
+  switchIcons_6: {fileID: 0}
+  switchIcons_7: {fileID: 0}
+  switchIcons_8: {fileID: 0}
+  switchIcons_9: {fileID: 0}
+  switchIcons_10: {fileID: 0}
+  switchIcons_11: {fileID: 0}
+  switchIcons_12: {fileID: 0}
+  switchIcons_13: {fileID: 0}
+  switchIcons_14: {fileID: 0}
+  switchIcons_15: {fileID: 0}
+  switchSmallIcons_0: {fileID: 0}
+  switchSmallIcons_1: {fileID: 0}
+  switchSmallIcons_2: {fileID: 0}
+  switchSmallIcons_3: {fileID: 0}
+  switchSmallIcons_4: {fileID: 0}
+  switchSmallIcons_5: {fileID: 0}
+  switchSmallIcons_6: {fileID: 0}
+  switchSmallIcons_7: {fileID: 0}
+  switchSmallIcons_8: {fileID: 0}
+  switchSmallIcons_9: {fileID: 0}
+  switchSmallIcons_10: {fileID: 0}
+  switchSmallIcons_11: {fileID: 0}
+  switchSmallIcons_12: {fileID: 0}
+  switchSmallIcons_13: {fileID: 0}
+  switchSmallIcons_14: {fileID: 0}
+  switchSmallIcons_15: {fileID: 0}
+  switchManualHTML: 
+  switchAccessibleURLs: 
+  switchLegalInformation: 
+  switchMainThreadStackSize: 1048576
+  switchPresenceGroupId: 
+  switchLogoHandling: 0
+  switchReleaseVersion: 0
+  switchDisplayVersion: 1.0.0
+  switchStartupUserAccount: 0
+  switchTouchScreenUsage: 0
+  switchSupportedLanguagesMask: 0
+  switchLogoType: 0
+  switchApplicationErrorCodeDisplay: 1
+  switchUseUnicode: 1
+  switchIncludeFileSharing: 0
+  switchLTCType: 0
+  switchLTCAgeSwitch: 0
+  switchLTCLanguageCode: 
+  switchLTCCountryCode: 
+  switchLTCApplicationName: 
+  switchLTCApplicationVersion: 
+  switchLTCMakeAvailable: 0
+  switchLTCRestrictAgeRating: 0
+  switchLTCRestrictVibration: 0
+  switchLTCRestrictUserInteraction: 0
+  switchLTCRestrictNetworkAccess: 0
+  switchLTCRestrictTouchScreenUsage: 0
+  switchRegionRatingAge_0: 0
+  switchRegionRatingAge_1: 0
+  switchRegionRatingAge_2: 0
+  switchRegionRatingAge_3: 0
+  switchRegionRatingAge_4: 0
+  switchRegionRatingAge_5: 0
+  switchRegionRatingAge_6: 0
+  switchRegionRatingAge_7: 0
+  switchRegionRatingAge_8: 0
+  switchRegionRatingAge_9: 0
+  switchRegionRatingAge_10: 0
+  switchRegionRatingAge_11: 0
+  switchRegionRatingAge_12: 0
+  switchRegionRatingAge_13: 0
+  switchRegionRatingAge_14: 0
+  switchRegionRatingAge_15: 0
+  switchRegionRatingAge_16: 0
+  switchRegionRatingAge_17: 0
+  switchRegionRatingAge_18: 0
+  switchRegionRatingAge_19: 0
+  switchRegionRatingAge_20: 0
+  switchRegionRatingAge_21: 0
+  switchRegionRatingAge_22: 0
+  switchRegionRatingAge_23: 0
+  switchRegionRatingAge_24: 0
+  switchRegionRatingAge_25: 0
+  switchRegionRatingAge_26: 0
+  switchRegionRatingAge_27: 0
+  switchRegionRatingAge_28: 0
+  switchRegionRatingAge_29: 0
+  switchRegionRatingAge_30: 0
+  switchRegionRatingAge_31: 0
+  switchRegionRatingAge_32: 0
+  switchRegionRatingAge_33: 0
+  switchRegionRatingAge_34: 0
+  switchRegionRatingAge_35: 0
+  switchRegionRatingAge_36: 0
+  switchRegionRatingAge_37: 0
+  switchRegionRatingAge_38: 0
+  switchRegionRatingAge_39: 0
+  switchRegionRatingAge_40: 0
+  switchRegionRatingAge_41: 0
+  switchRegionRatingAge_42: 0
+  switchRegionRatingAge_43: 0
+  switchRegionRatingAge_44: 0
+  switchRegionRatingAge_45: 0
+  switchRegionRatingAge_46: 0
+  switchRegionRatingAge_47: 0
+  switchRegionRatingAge_48: 0
+  switchRegionRatingAge_49: 0
+  switchRegionRatingAge_50: 0
+  switchRegionRatingAge_51: 0
+  switchRegionRatingAge_52: 0
+  switchRegionRatingAge_53: 0
+  switchRegionRatingAge_54: 0
+  switchRegionRatingAge_55: 0
+  switchRegionRatingAge_56: 0
+  switchRegionRatingAge_57: 0
+  switchRegionRatingAge_58: 0
+  switchRegionRatingAge_59: 0
+  switchRegionRatingAge_60: 0
+  switchRegionRatingAge_61: 0
+  switchRegionRatingAge_62: 0
+  switchRegionRatingAge_63: 0
+  switchRegionRatingAge_64: 0
+  switchRegionRatingAge_65: 0
+  switchRegionRatingAge_66: 0
+  switchRegionRatingAge_67: 0
+  switchRegionRatingAge_68: 0
+  switchRegionRatingAge_69: 0
+  switchRegionRatingAge_70: 0
+  switchRegionRatingAge_71: 0
+  switchRegionRatingAge_72: 0
+  switchRegionRatingAge_73: 0
+  switchRegionRatingAge_74: 0
+  switchRegionRatingAge_75: 0
+  switchRegionRatingAge_76: 0
+  switchRegionRatingAge_77: 0
+  switchRegionRatingAge_78: 0
+  switchRegionRatingAge_79: 0
+  switchRegionRatingAge_80: 0
+  switchRegionRatingAge_81: 0
+  switchRegionRatingAge_82: 0
+  switchRegionRatingAge_83: 0
+  switchRegionRatingAge_84: 0
+  switchRegionRatingAge_85: 0
+  switchRegionRatingAge_86: 0
+  switchRegionRatingAge_87: 0
+  switchRegionRatingAge_88: 0
+  switchRegionRatingAge_89: 0
+  switchRegionRatingAge_90: 0
+  switchRegionRatingAge_91: 0
+  switchRegionRatingAge_92: 0
+  switchRegionRatingAge_93: 0
+  switchRegionRatingAge_94: 0
+  switchRegionRatingAge_95: 0
+  switchLocalContactIds: 
+  switchParentalControl: 0
+  switchAllowedSockets: 
+  switchSocketBufferEfficiency: 0
+  switchSocketConcurrencyLimit: 0
+  switchSocketInitialBufferSize: 0
+  switchSocketMaxBufferSize: 0
+  switchMaxSocketPingTime: 0
+  switchUseMicroSleepForWaiting: 0
+  switchMicroSleepForWaiting: 0
+  PlayStationSupportNpTitle: 0
+  PlayStationSupportNpPresence: 0
+  PlayStationNpTitleAttachmentPath: 
+  PlayStationNpTitleAttachmentSize: 0
+  PlayStationNpTitleAttachmentThumbnailPath: 
+  PlayStationNpTitleAttachmentThumbnailSize: 0
+  PlayStationNpTitleAttachmentIconPath: 
+  PlayStationNpTitleAttachmentIconSize: 0
+  PlayStationNpTitleContentRating: 0
+  PlayStationNpTitleFeature: 0
+  PlayStationNpTitleBootable: 0
+  PlayStationNpTitleDescription: 
+  PlayStationNpTitleLogoPath: 
+  PlayStationNpTitleLogoSize: 0
+  PlayStationNpTitleBGPath: 
+  PlayStationNpTitleBGSize: 0
+  PlayStationNpTitleBGSmallPath: 
+  PlayStationNpTitleBGSmallSize: 0
+  PlayStationNpTitleStartupImageOverridePath: 
+  PlayStationNpTitleStartupImageOverrideSize: 0
+  PlayStationNpTitleStartupImageOverrideThumbnailPath: 
+  PlayStationNpTitleStartupImageOverrideThumbnailSize: 0
+  PlayStationNpTitleSaveDataQuota: 0
+  PlayStationNpTitleSaveDataMaxSize: 0
+  PlayStationNpTitleSaveDataMaxFileCount: 0
+  PlayStationNpTitleSaveDataQuotaTitleVersion: 0
+  PlayStationNpTitleSaveDataMaxSizeTitleVersion: 0
+  PlayStationNpTitleSaveDataMaxFileCountTitleVersion: 0
+  PlayStationNpTitleSaveDataSortEnabled: 0
+  PlayStationNpTitleSaveDataSortKey: 0
+  PlayStationNpTitleSaveDataSortOrder: 0
+  PlayStationNpTitleSaveDataSortAttribute: 0
+  PlayStationNpTitleSaveDataUserDefinedParam1: 0
+  PlayStationNpTitleSaveDataUserDefinedParam2: 0
+  PlayStationNpTitleSaveDataUserDefinedParam3: 0
+  PlayStationNpTitleSaveDataUserDefinedParam4: 0
+  PlayStationNpTrophyIconPath: 
+  PlayStationNpTrophyIconSize: 0
+  PlayStationNpTrophyGroupIconPath: 
+  PlayStationNpTrophyGroupIconSize: 0
+  PlayStationNpInGameChat: 0
+  PlayStationNpPresenceBind: 0
+  PlayStationNpPresenceBindTitleVersion: 0
+  PlayStationNpPresenceBindTitleVersionLabel: 
+  PlayStationNpPresenceBindTitleVersionAttribute: 0
+  PlayStationNpPresenceBindTitleVersionAttributeLabel: 
+  PlayStationNpPresenceBindTitleVersionAttributeType: 0
+  PlayStationNpPresenceBindTitleVersionAttributeMin: 0
+  PlayStationNpPresenceBindTitleVersionAttributeMax: 0
+  PlayStationNpPresenceBindTitleVersionAttributeStep: 0
+  PlayStationNpPresenceBindTitleVersionAttributeCur: 0
+  PlayStationNpPresenceBindTitleVersionAttributeCurLabel: 
+  PlayStationNpPresenceBindCustomDataPath: 
+  PlayStationNpPresenceBindCustomDataSize: 0
+  PlayStationNpPresenceBindStatus: 0
+  PlayStationNpPresenceBindStatusLabel: 
+  PlayStationNpPresenceBindStatusType: 0
+  PlayStationNpPresenceBindStatusMin: 0
+  PlayStationNpPresenceBindStatusMax: 0
+  PlayStationNpPresenceBindStatusStep: 0
+  PlayStationNpPresenceBindStatusCur: 0
+  PlayStationNpPresenceBindStatusCurLabel: 
+  ps4NPAgeRating: 12
+  ps4NPTitleSecret: 
+  ps4NPTrophyPackPath: 
+  ps4ParentalLevel: 11
+  ps4ContentID: ED1633-NPXX51362_00-0000000000000000
+  ps4Category: 0
+  ps4MasterVersion: 01.00
+  ps4AppVersion: 01.00
+  ps4AppType: 0
+  ps4ParamSfxPath: 
+  ps4VideoOutPixelFormat: 0
+  ps4VideoOutInitialWidth: 1920
+  ps4VideoOutBaseModeInitialWidth: 1920
+  ps4VideoOutReprojectionRate: 60
+  ps4PronunciationXMLPath: 
+  ps4PronunciationSIGPath: 
+  ps4BackgroundImagePath: 
+  ps4StartupImagePath: 
+  ps4StartupImagesFolder: 
+  ps4IconImagesFolder: 
+  ps4SaveDataImagePath: 
+  ps4SdkOverride: 
+  ps4BGMPath: 
+  ps4ShareFilePath: 
+  ps4ShareOverlayImagePath: 
+  ps4PrivacyGuardImagePath: 
+  ps4ExtraSceSysFile: 
+  ps4NPtitleDatPath: 
+  ps4RemotePlayKeyAssignment: -1
+  ps4RemotePlayKeyMappingDir: 
+  ps4PlayTogetherPlayerCount: 0
+  ps4EnterButtonAssignment: 1
+  ps4ApplicationParam1: 0
+  ps4ApplicationParam2: 0
+  ps4ApplicationParam3: 0
+  ps4ApplicationParam4: 0
+  ps4DownloadDataSize: 0
+  ps4GarlicHeapSize: 2048
+  ps4ProGarlicHeapSize: 2560
+  playerPrefsMaxSize: 32768
+  ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
+  ps4pnSessions: 1
+  ps4pnPresence: 1
+  ps4pnFriends: 1
+  ps4pnGameCustomData: 1
+  playerPrefsSupport: 0
+  enableApplicationExit: 0
+  resetTempFolder: 1
+  restrictedAudioUsageRights: 0
+  ps4UseResolutionFallback: 0
+  ps4ReprojectionSupport: 0
+  ps4UseAudio3dBackend: 0
+  ps4UseSocialGarlic: 0
+  ps4ScriptOptimizationLevel: 0
+  ps4Audio3dVirtualSpeakerCount: 14
+  ps4attribCpuUsage: 0
+  ps4PatchPkgPath: 
+  ps4PatchLatestPkgPath: 
+  ps4PatchChangeinfoPath: 
+  ps4PatchDayOne: 0
+  ps4attribUserManagement: 0
+  ps4attribMoveSupport: 0
+  ps4attrib3DSupport: 0
+  ps4attribShareSupport: 0
+  ps4attribExclusiveVR: 0
+  ps4disableAutoHideSplash: 0
+  ps4videoRecordingFeaturesUsed: 0
+  ps4contentSearchFeaturesUsed: 0
+  ps4CompatibilityPS5: 0
+  ps4AllowPS5Detection: 0
+  ps4GPU800MHz: 0
+  ps4attribEyeToEyeDistanceSetting: 0
+  ps4IncludedModules: []
+  ps4attribVROutputEnabled: 0
+  monoEnv: 
+  splashScreenBackgroundSource: 0
+  blurSplashScreenBackground: 1
+  spritePackerPolicy: 
+  webGLMemorySize: 16
+  webGLExceptionSupport: 1
+  webGLNameFilesAsHashes: 0
+  webGLDataCaching: 1
+  webGLDebugSymbols: 0
+  webGLEmscriptenArgs: 
+  webGLModulesDirectory: 
+  webGLTemplate: APPLICATION:Default
+  webGLAnalyzeBuildSize: 0
+  webGLUseEmbeddedResources: 0
+  webGLCompressionFormat: 1
+  webGLWasmArithmeticExceptions: 0
+  webGLLinkerTarget: 1
+  webGLThreadsSupport: 0
+  webGLDecompressionFallback: 0
+  scriptingDefineSymbols:
+    1: 
+    4: 
+    7: 
+    14: 
+    17: 
+    18: 
+    19: 
+    21: 
+    23: 
+    24: 
+    25: 
+    26: 
+    27: 
+    28: 
+    29: 
+    30: 
+    31: 
+    32: 
+    33: 
+    34: 
+    35: 
+    37: 
+    38: 
+    39: 
+    40: 
+    41: 
+    42: 
+    43: 
+    44: 
+    45: 
+    46: 
+    47: 
+    48: 
+    49: 
+    50: 
+    51: 
+    52: 
+    53: 
+    54: 
+    55: 
+    56: 
+    57: 
+    58: 
+    59: 
+    60: 
+    61: 
+    62: 
+    63: 
+    64: 
+    65: 
+    66: 
+    67: 
+    68: 
+    69: 
+    70: 
+    71: 
+    72: 
+    73: 
+    74: 
+    75: 
+    76: 
+    77: 
+    78: 
+    79: 
+    80: 
+    81: 
+    82: 
+    83: 
+    84: 
+    85: 
+    86: 
+    87: 
+    88: 
+    89: 
+    90: 
+    91: 
+    92: 
+    93: 
+    94: 
+    95: 
+    96: 
+    97: 
+    98: 
+    99: 
+    100: 
+    101: 
+    102: 
+    103: 
+    104: 
+    105: 
+    106: 
+    107: 
+    108: 
+    109: 
+    110: 
+    111: 
+    112: 
+    113: 
+    114: 
+    115: 
+    116: 
+    117: 
+    118: 
+    119: 
+    120: 
+    121: 
+    122: 
+    123: 
+    124: 
+    125: 
+    126: 
+    127: 
+    128: 
+    129: 
+    130: 
+    131: 
+    132: 
+    133: 
+    134: 
+    135: 
+    136: 
+    137: 
+  additionalCompilerArguments: {}
+  platformArchitecture: {}
+  scriptingBackend: {}
+  il2cppCompilerConfiguration: {}
+  managedStrippingLevel: {}
+  incrementalIl2cppBuild: {}
+  suppressCommonWarnings: {}
+  allowUnsafeCode: 0
+  useDeterministicCompilation: 1
+  enableRoslynAnalyzers: 1
+  additionalIl2CppArgs: {}
+  scriptingRuntimeVersion: 1
+  gcIncremental: 1
+  gcWBarrierValidation: 0
+  apiCompatibilityLevel: {}
+  m_activeInputHandler: 0
+  windowsGamepadBackendHint: 0
+  cloudProjectId: 
+  legacyClampBlendShapeWeights: 0
+  playerDataPath: 
+  forceSingleInstance: 0
+  useMonolithicPipelines: 1
+  virtualTexturingSupportEnabled: 0
