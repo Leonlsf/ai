@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>压力怪兽 - 快速测试版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .game-container {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        .monster-area {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .monster {
+            width: 180px;
+            height: 180px;
+            background: #4ade80;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(74,222,128,0.3);
+        }
+        .monster.happy {
+            animation: bounce 0.5s ease;
+        }
+        .monster-eyes {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 15px;
+        }
+        .eye {
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pupil {
+            width: 15px;
+            height: 15px;
+            background: #1f2937;
+            border-radius: 50%;
+        }
+        .monster-mouth {
+            width: 50px;
+            height: 30px;
+            background: #16a34a;
+            border-radius: 0 0 50px 50px;
+        }
+        .monster.happy .monster-mouth {
+            border-radius: 50px 50px 0 0;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.1); }
+        }
+        .input-area {
+            margin: 25px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            resize: none;
+            margin-bottom: 15px;
+        }
+        .emotion-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .emotion-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: white;
+        }
+        .emotion-btn:hover {
+            transform: scale(1.05);
+        }
+        .emotion-btn.anger { background: #ef4444; }
+        .emotion-btn.anxiety { background: #f59e0b; }
+        .emotion-btn.sadness { background: #3b82f6; }
+        .emotion-btn.irritation { background: #f97316; }
+        .feed-btn {
+            width: 100%;
+            padding: 15px;
+            background: #10b981;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .feed-btn:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .foods-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+            min-height: 80px;
+        }
+        .food-item {
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: grab;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            animation: float 2s ease-in-out infinite;
+        }
+        .food-item.anger { background: #ef4444; }
+        .food-item.anxiety { background: #f59e0b; }
+        .food-item.sadness { background: #3b82f6; }
+        .food-item.irritation { background: #f97316; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .particles {
+            position: fixed;
+            pointer-events: none;
+        }
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: particle-fade 1s ease-out forwards;
+        }
+        @keyframes particle-fade {
+            0% { opacity: 1; transform: translateY(0) scale(1); }
+            100% { opacity: 0; transform: translateY(-50px) scale(0.5); }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎮 压力怪兽</h1>
+    <p class="subtitle">把烦心事喂给怪兽！释放压力的小游戏</p>
+    
+    <div class="game-container">
+        <div class="monster-area">
+            <div class="monster" id="monster">
+                <div class="monster-eyes">
+                    <div class="eye"><div class="pupil"></div></div>
+                    <div class="eye"><div class="pupil"></div></div>
+                </div>
+                <div class="monster-mouth"></div>
+            </div>
+        </div>
+        
+        <div class="foods-container" id="foods"></div>
+        
+        <div class="input-area">
+            <textarea id="stressInput" placeholder="输入你的烦心事... e.g. 加班、堵车、考试"></textarea>
+            
+            <div class="emotion-buttons">
+                <button class="emotion-btn anger" data-emotion="anger">😠 愤怒</button>
+                <button class="emotion-btn anxiety" data-emotion="anxiety">😰 焦虑</button>
+                <button class="emotion-btn sadness" data-emotion="sadness">😢 悲伤</button>
+                <button class="emotion-btn irritation" data-emotion="irritation">😤 烦躁</button>
+            </div>
+            
+            <button class="feed-btn" id="feedBtn">🍽️ 喂给怪兽</button>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="feedCount">0</div>
+                <div class="stat-label">已喂食次数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="happiness">0%</div>
+                <div class="stat-label">怪兽快乐值</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="combo">0</div>
+                <div class="stat-label">连击数</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="particles" id="particles"></div>
+
+    <script>
+        let feedCount = 0;
+        let happiness = 0;
+        let combo = 0;
+        let selectedEmotion = 'anger';
+        let foods = [];
+        
+        const emotionNames = {
+            anger: '愤怒',
+            anxiety: '焦虑',
+            sadness: '悲伤',
+            irritation: '烦躁'
+        };
+        
+        const emotionEmojis = {
+            anger: '🔥',
+            anxiety: '⚡',
+            sadness: '💧',
+            irritation: '💥'
+        };
+        
+        const monster = document.getElementById('monster');
+        const foodsContainer = document.getElementById('foods');
+        const feedBtn = document.getElementById('feedBtn');
+        const feedCountEl = document.getElementById('feedCount');
+        const happinessEl = document.getElementById('happiness');
+        const comboEl = document.getElementById('combo');
+        const particlesContainer = document.getElementById('particles');
+        
+        document.querySelectorAll('.emotion-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                selectedEmotion = this.dataset.emotion;
+                document.querySelectorAll('.emotion-btn').forEach(b => b.style.boxShadow = 'none');
+                this.style.boxShadow = '0 0 15px rgba(255,255,255,0.5)';
+            });
+        });
+        
+        document.querySelector('.emotion-btn.anger').style.boxShadow = '0 0 15px rgba(255,255,255,0.5)';
+        
+        feedBtn.addEventListener('click', () => {
+            const text = document.getElementById('stressInput').value.trim();
+            if (text) {
+                createFood(text, selectedEmotion);
+                document.getElementById('stressInput').value = '';
+            }
+        });
+        
+        function createFood(text, emotion) {
+            const food = document.createElement('div');
+            food.className = `food-item ${emotion}`;
+            food.textContent = `${emotionEmojis[emotion]} ${text}`;
+            food.dataset.emotion = emotion;
+            
+            food.addEventListener('click', () => {
+                feedToMonster(food);
+            });
+            
+            foodsContainer.appendChild(food);
+            foods.push(food);
+        }
+        
+        function feedToMonster(food) {
+            const rect = food.getBoundingClientRect();
+            const monsterRect = monster.getBoundingClientRect();
+            
+            food.style.transition = 'all 0.5s ease';
+            food.style.left = (monsterRect.left + monsterRect.width/2 - rect.left - rect.width/2) + 'px';
+            food.style.top = (monsterRect.top + monsterRect.height/2 - rect.top - rect.height/2) + 'px';
+            food.style.transform = 'scale(0)';
+            
+            setTimeout(() => {
+                food.remove();
+                
+                feedCount++;
+                happiness = Math.min(100, happiness + 10);
+                combo++;
+                
+                updateStats();
+                makeMonsterHappy(food.dataset.emotion);
+                createParticles(monsterRect.left + monsterRect.width/2, monsterRect.top + monsterRect.height/2, food.dataset.emotion);
+            }, 500);
+        }
+        
+        function makeMonsterHappy(emotion) {
+            monster.classList.add('happy');
+            setTimeout(() => monster.classList.remove('happy'), 500);
+            
+            const colors = {
+                anger: '#ef4444',
+                anxiety: '#f59e0b',
+                sadness: '#3b82f6',
+                irritation: '#f97316'
+            };
+            monster.style.background = colors[emotion];
+            setTimeout(() => monster.style.background = '#4ade80', 300);
+        }
+        
+        function createParticles(x, y, emotion) {
+            const colors = {
+                anger: ['#ef4444', '#dc2626'],
+                anxiety: ['#f59e0b', '#fbbf24'],
+                sadness: ['#3b82f6', '#60a5fa'],
+                irritation: ['#f97316', '#fb923c']
+            };
+            
+            for (let i = 0; i < 8; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.background = colors[emotion][i % 2];
+                particle.style.left = x + 'px';
+                particle.style.top = y + 'px';
+                particle.style.transform = `translate(${(Math.random() - 0.5) * 100}px, ${Math.random() * 100}px)`;
+                
+                particlesContainer.appendChild(particle);
+                
+                setTimeout(() => particle.remove(), 1000);
+            }
+        }
+        
+        function updateStats() {
+            feedCountEl.textContent = feedCount;
+            happinessEl.textContent = happiness + '%';
+            comboEl.textContent = combo;
+        }
+        
+        setInterval(() => {
+            if (combo > 0) {
+                combo = 0;
+                updateStats();
+            }
+        }, 5000);
+        
+        setTimeout(() => {
+            createFood('加班', 'anger');
+            createFood('考试', 'anxiety');
+            createFood('堵车', 'irritation');
+        }, 500);
+    </script>
+</body>
+</html>
